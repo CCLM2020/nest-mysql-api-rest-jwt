@@ -5,6 +5,7 @@ import { BreedsModule } from './breeds/breeds.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { CustomConfigModule } from './config/config.module';
 
 
 @Module({
@@ -27,7 +28,8 @@ import { ConfigModule } from '@nestjs/config';
     CatsModule,
     BreedsModule,
     UsersModule,
-    AuthModule
+    AuthModule,
+    CustomConfigModule
   ],
   controllers: [],
   providers: [],
